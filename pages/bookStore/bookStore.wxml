@@ -1,0 +1,18 @@
+<!--书架-->
+<view>
+  <view class="storeHead">
+    <view style='text-align:right'>
+      <view class="toBooks" bindtap='toBookCity'>书城</view>
+    </view>
+    <view class="booksBody">
+      <view class="bookLi" data-bookid="{{item.id}}" data-title="{{item.title}}" data-chapterid="{{item.chapterid}}"  wx:for="{{collectList}}" wx:key="{{index}}" bindtap='toBookDetail' catchlongpress="deleatBook">
+        <image src="{{urlImg + item.bookImg}}"/>
+        <view class="booksName">{{item.title}}</view>
+      </view>
+      <view class="bookLi addBook">
+        +
+      </view>
+    </view>
+  </view>
+
+</view>

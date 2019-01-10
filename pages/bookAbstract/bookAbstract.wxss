@@ -1,0 +1,82 @@
+/* pages/bookAbstract/bookAbstract.wxss */
+.abstractHead{
+  padding:50rpx 40rpx;
+}
+.bookImg{
+  width:180rpx;
+  height:260rpx;
+  vertical-align: top;
+}
+.bookInfo{
+  display:inline-block; 
+  width:400rpx;
+  margin-left:20rpx;
+}
+.bookName{
+  font-size:32rpx;
+  overflow: hidden;
+  width:100%;
+}
+.category{
+  font-size:24rpx;
+  color:#999;
+  margin-top:20rpx;
+}
+.categoryText{
+  display: inline-block;
+  padding:4rpx 10rpx;
+  border:1px solid #E45348;
+  color:#E45348;
+  border-radius:8rpx;
+}
+.createTimt,.author,.status{
+  font-size:24rpx;
+  color:#999;
+  margin-top:10rpx;
+}
+.buttonList{
+  width:100%;
+  box-sizing: border-box;
+  padding:0 40rpx 30rpx 40rpx;
+  border-bottom:1px solid #eee;
+}
+.buttonLi{
+  display:inline-block;
+  width:310rpx;
+  height:70rpx;
+  line-height:70rpx;
+  text-align: center;
+  font-size:28rpx;
+  margin-right:40rpx;
+  border-radius:35rpx;
+}
+.buttonLi:last-child{
+  margin-right:0;
+}
+.addStore{
+  color:#E45348;
+  border:1px solid #E45348;
+}
+.beginLook{
+  background:#E45348;
+  color:#fff;
+}
+.stractBody{
+  width:100%;
+  box-sizing: border-box;
+  padding:10rpx 30rpx;
+}
+.title{
+  font-size:24rpx;
+  color:#000;
+}
+.content{
+  font-size:24rpx;
+  color:#999;
+  text-indent: 2em;
+  margin-top:10rpx;
+}
+.isStore{
+  color:#999;
+  border:1px solid #999;
+}

@@ -1,0 +1,31 @@
+<!--pages/index/index.wxml-->
+<view class="find">
+  <swiper current="{{swiperIndex}}" autoplay class='swiperClass' interval="3000" circular="{{true}}" duration="1500" previous-margin="100rpx" next-margin="100rpx" bindchange="bindchange">
+    <swiper-item class="updateLiBox">
+      <view class="updateLi">
+          <image data-id="{{bannerOne.id}}" class="findImg" src="{{urlImg + bannerOne.bookImg}}" bindtap='toBook' />
+          <view class="bookName">{{bannerOne.title}}</view>
+          <view class="bookAuthor">{{bannerOne.author}}</view>
+          <view class="readCount">300人在读</view>
+      </view>
+    </swiper-item>
+    <swiper-item class="updateLiBox">
+      <view class="updateLi freeBox">
+        <view class="freeHead">好书免费领</view>
+        <view class="freeBody">
+          <view class="freeLi" data-id="{{item.id}}" wx:for="{{bannerTwo}}" wx:key="{{item.id}}"  bindtap='toBook'>
+            <image class="freeBoxImg" src="{{urlImg + item.bookImg}}" />
+            <view class="ferrBoxTitle">{{item.title}}</view>
+          </view>
+        </view>
+        <view class="lookMoreFree">查看全部可领书籍</view>
+      </view>
+    </swiper-item>
+    <swiper-item class="updateLiBox">
+      <view class="updateLi">
+
+      </view>
+    </swiper-item>
+  </swiper>
+
+</view>

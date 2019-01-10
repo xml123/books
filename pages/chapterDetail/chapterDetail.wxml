@@ -1,0 +1,90 @@
+<!--pages/chapterDetail/chapterDetail.wxml-->
+<view class="chapterDetail {{styleColor}}" hidden="{{!hideChapterList}}" style="background:{{ styleColor == 'sum' ? bgColor : '#000'}}">
+  <view class="chapterHead">
+    <view class="chapterTitle">{{chapterDetail.title}}</view>
+  </view>
+  <view class="chapterCount" style="font-size:{{wordSize + 'rpx'}}" bindtap='settingChange'>
+    <view class="textCount" wx:for="{{contentList}}" wx:key="{{index}}">{{item}}</view>
+  </view>
+  <view class="chapterBottom">
+    <view class="preChapter chapterBtn" bindtap='prevChapter'>上一章</view>
+    <view class="menuBox">
+      <image bindtap='showChapterList' src="../../images/menu.png" />
+    </view>
+    <view class="nextChapter chapterBtn" bindtap='nextChapter'>下一章</view>
+  </view>
+</view>
+<!-- 章节遮罩层 -->
+<view class="chapterListBox {{styleColor}} {{hideChapterList ? '' : 'active'}}">
+  <view class="chapterBj {{styleColor}}"/>
+  <scroll-view class="chapterList" scroll-y='true' scroll-into-view="{{toView}}" >
+    <view id="{{'inToView'+item.id}}" class="chapterLi {{chapterid == item.id ? 'active' : ''}}" wx:for="{{chapterList}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap='toChapter'>
+      <view hidden="{{chapterid == item.id}}" class="point"/>
+      <image wx:if="{{chapterid == item.id}}" class="addressImg" src="../../images/address.png"/>
+      <view class="chapterText {{chapterid == item.id ? 'active' : ''}}">{{item.chapter_title}}</view>
+      <image class="rightImg" src="../../images/blur_right.png" />
+    </view>
+  </scroll-view>
+  <view class="closeImg {{styleColor}}" bindtap='closeChapter'>
+    <image src="../../images/returnChapter.png"/>
+  </view>
+</view>
+<view class="setting" wx:if="{{showSetting}}">
+  <view class="setOne">
+    <view class="settingLi" bindtap='changeColor'>
+      <image src="../../images/{{styleColor}}.png" />
+      <view class="settingText">{{styleColor == "sum" ? "夜间" : "日间"}}</view>
+      <!-- <view class="settingText">日间</view> -->
+    </view>
+    <view class="settingLi" bindtap='addStore'>
+      <image src="../../images/{{isSelect=='true' ? 'collected' : 'collect'}}.png" />
+      <view class="settingText">{{isSelect=="true" ? "已在书架" : "加入书架"}}</view>
+    </view>
+    <view class="settingLi" bindtap='showChapterList'>
+      <image src="../../images/chapter.png" />
+      <view class="settingText">目录</view>
+    </view>
+    <view class="settingLi" bindtap='showSet'>
+      <image src="../../images/size.png" />
+      <view class="settingText">设置</view>
+    </view>
+  </view>
+  <view class="setTwo" wx:if="{{setShow}}">
+    <view class="sizeBtnBox">
+      <view class="sizeBtn" data-size="reduce" bindtap='changeFontSize'>Aa-</view>
+      <view class="sizeBtn" data-size="add" bindtap='changeFontSize'>Aa+</view>
+    </view>
+    <view class="colorList">
+      <view class="colorLi" data-color="#fff" bindtap='changeBgColor'>
+        <view class="colorRadius colorZero">
+          <image wx:if="{{bgColor == '#fff'}}" src="../../images/setSelect.png" />
+        </view>
+      </view>
+      <view class="colorLi" data-color="#D8D9DB" bindtap='changeBgColor'>
+        <view class="colorRadius colorOne">
+          <image wx:if="{{bgColor == '#D8D9DB'}}" src="../../images/setSelect.png" />
+        </view>
+      </view>
+      <view class="colorLi" data-color="#B4AE9C" bindtap='changeBgColor'>
+        <view class="colorRadius colorTwo">
+          <image wx:if="{{bgColor == '#B4AE9C'}}" src="../../images/setSelect.png" />
+        </view>
+      </view>
+      <view class="colorLi" data-color="#CAE5CD" bindtap='changeBgColor'>
+        <view class="colorRadius colorThree">
+          <image wx:if="{{bgColor == '#CAE5CD'}}" src="../../images/setSelect.png" />
+        </view>
+      </view>
+      <view class="colorLi" data-color="#EDDDBA" bindtap='changeBgColor'>
+        <view class="colorRadius colorFour">
+          <image wx:if="{{bgColor == '#EDDDBA'}}" src="../../images/setSelect.png" />
+        </view>
+      </view>
+      <view class="colorLi" data-color="#E7D4DF" bindtap='changeBgColor'>
+        <view class="colorRadius colorFive">
+          <image wx:if="{{bgColor == '#E7D4DF'}}" src="../../images/setSelect.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

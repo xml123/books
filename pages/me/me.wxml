@@ -1,0 +1,10 @@
+<!--pages/me/me.wxml-->
+<view class="user">
+  <view class="userInfo" style="background-image: url('../../images/userBackground.png')">
+    <view class="userAvatr">
+      <image class="avator"src="../../images/avator.png"/>
+      <view class="userName">user</view>
+      <image class="toEdit" src="../../images/blur_right.png"/>
+    </view>
+  </view>
+</view>

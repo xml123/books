@@ -1,0 +1,147 @@
+/* pages/bookCity/bookCity.wxss */
+.bookCity{
+  width:100%;
+  box-sizing: border-box;
+  padding:0 46rpx;
+}
+.findBox{
+  width:100%;
+  margin-top:24rpx;
+  border:1px solid #cccccc;
+  height:90rpx;
+  box-sizing: border-box;
+  padding:12rpx 20rpx;
+}
+.findBox image{
+  width:46rpx;
+  height:46rpx;
+  vertical-align: top;
+  margin-top:10rpx;
+}
+.findInput{
+  display:inline-block;
+  width:560rpx;
+  height:100%;
+  line-height:76rpx;
+  box-sizing: border-box;
+  padding:0 20rpx;
+  font-size: 28rpx;
+}
+.youLikeBox{
+  width:100%;
+  height:114rpx;
+  line-height:114rpx;
+  margin-top:24rpx;
+}
+.youLike{
+  float:left;
+  font-size:32rpx;
+}
+.changeLike{
+  float:right;
+  font-size:28rpx;
+  color:#737373;
+}
+.likeLi{
+  width:100%;
+  height:170rpx;
+  padding:24rpx 0;
+}
+.likeImg{
+  width:120rpx;
+  height:100%;
+  display:inline-block;
+  vertical-align: top;
+}
+.likeLiRight{
+  width:530rpx;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-left:20rpx;
+}
+.likeBookTitle{
+  font-size:32rpx;
+  overflow: hidden;
+}
+.likeBookAuthor{
+  font-size:28rpx;
+  color:#505050;
+  height:60rpx;
+  line-height:60rpx;
+  width:200rpx;
+}
+.likeSource{
+  font-size:28rpx;
+  color:#505050;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hotLi{
+  width:328rpx;
+  height:140rpx;
+  display:inline-block;
+  padding:24rpx 0;
+  vertical-align: top;
+}
+.hotBookImg{
+  width:106rpx;
+  height:100%;
+  vertical-align: top;
+}
+.hotLiRight{
+  display:inline-block;
+  width:200rpx;
+  margin-left:20rpx;
+}
+.hotBookName{
+  font-size: 30rpx;
+  width:200rpx;
+  height:40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hotCountPeople{
+  color:#505050;
+  font-size:25rpx;
+}
+.rankLi{
+  width:316rpx;
+  height:94rpx;
+  line-height: 94rpx;
+  text-align:center;
+  font-size:38rpx;
+  color:#fff;
+  font-weight:bold;
+  margin-right:24rpx;
+  display:inline-block;
+  margin-bottom:20rpx;
+}
+.rankLi:nth-child(2n){
+  margin-right:0;
+}
+.rankLi:nth-child(1){
+  background-color:#737373;
+}
+.rankLi:nth-child(2){
+  background-color:#737373;
+}
+.rankLi:nth-child(3){
+  background-color:#686868;
+}
+.rankLi:nth-child(4){
+  background-color:#9c9c9c;
+}
+.rankLi:nth-child(5){
+  background-color:#868686;
+}
+.rankLi:nth-child(6){
+  background-color:#a2a2a2;
+}
+.hotAuthor{
+  width:200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

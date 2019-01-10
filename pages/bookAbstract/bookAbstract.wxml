@@ -1,0 +1,23 @@
+<!--pages/bookAbstract/bookAbstract.wxml-->
+<view class="abstract">
+  <view class="abstractHead">
+    <image class="bookImg" src="{{urlImg+abstractAll.image}}"/>
+    <view class="bookInfo">
+      <view class="bookName">{{abstractAll.title}}</view>
+      <view class="category"> 分类：<view class="categoryText">{{abstractAll.category}}</view></view>
+      <view class="author">作者：{{abstractAll.author}}</view>
+      <view class="createTimt">更新：2018-08-12 11:26</view>
+      <view class="status">状态：已完成</view>
+    </view>
+  </view>
+  <view class="buttonList">
+    <view class="buttonLi addStore" bindtap='addStore' hidden='{{abstractAll.collect || isSelect}}'>加入书架</view>
+    <view wx:if="{{abstractAll.collect || isSelect}}" class="buttonLi isStore">已收藏</view>
+    <view class="buttonLi beginLook" data-id="{{id}}" bindtap='beginRead'>开始阅读</view>
+  </view>
+  <view class="stractBody">
+    <view class="title">简介：</view>
+    <view class="content">{{abstractAll.abstract}}</view>
+  </view>
+  
+</view>

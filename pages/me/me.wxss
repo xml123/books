@@ -1,0 +1,34 @@
+/* pages/me/me.wxss */
+.userInfo{
+  width:100%;
+  background:#fff;
+  height:400rpx;
+  background-size:100% 100%;
+}
+.userAvatr{
+  text-align: center;
+  padding:100rpx;
+  position:relative;
+}
+.avator{
+  width:128rpx;
+  height:128rpx;
+  border-radius:50%;
+}
+.userName{
+  font-size: 36rpx;
+  text-align: center;
+  color:#999;
+}
+.toEdit{
+  position:absolute;
+  right:10%;
+  top:40%;
+  width:20rpx;
+  height:40rpx;
+}
+.line{
+  width:100%;
+  height:20rpx;
+  background:rgba(217, 217, 217, 1);
+}

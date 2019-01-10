@@ -1,0 +1,52 @@
+/* pages/bookStore/bookStore.wxss */
+.toBooks{
+  width:120rpx;
+  text-align: center;
+  font-size:32rpx;
+  color:#737373;
+  height:100rpx;
+  line-height:100rpx;
+  display: inline-block;
+}
+.booksBody{
+  padding:0 50rpx;
+}
+.bookLi{
+  margin-bottom:36rpx;
+  width:170rpx;
+  margin-right:60rpx;
+  display:inline-block;
+  border:1px solid #eee;
+  vertical-align: top;
+  height:286rpx;
+}
+.bookLi:nth-child(3n){
+  margin-right:0;
+}
+.bookLi image{
+  width:100%;
+  height:240rpx;
+  vertical-align: top;
+}
+.booksName{
+  color:#505050;
+  font-size:24rpx;
+  width:100%;
+  height:46rpx;
+  line-height:46rpx;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding:0 10rpx;
+}
+.addBook{
+  text-align: center;
+  font-size:80rpx;
+  line-height:286rpx;
+  color:#999;
+}
+
+
+

@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.9",
+	"appid": "wxff782f9a8a041250",
+	"projectname": "%E5%B0%8F%E8%AF%B4",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "书架",
+					"pathName": "pages/bookStore/bookStore",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "书城",
+					"pathName": "pages/bookCity/bookCity",
+					"query": "id=3"
+				},
+				{
+					"id": 2,
+					"name": "简介",
+					"pathName": "pages/bookAbstract/bookAbstract",
+					"query": "id=3"
+				},
+				{
+					"id": 3,
+					"name": "章节",
+					"pathName": "pages/chapterDetail/chapterDetail",
+					"query": "bookid=1&chapterid=1"
+				}
+			]
+		}
+	}
+}

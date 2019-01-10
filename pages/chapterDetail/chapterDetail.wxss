@@ -1,0 +1,250 @@
+/* pages/chapterDetail/chapterDetail.wxss */
+.chapterDetail{
+  width:100%;
+  min-height:100%;
+  box-sizing: border-box;
+  padding:0 30rpx;
+}
+.chapterHead{
+  padding-top:20rpx;
+  text-align: center;
+}
+.chapterNum{
+  font-size:32rpx;
+}
+.chapterTitle{
+  color:#383838;
+  font-size:38rpx;
+}
+.chapterCount{
+  /* color:#808080; */
+  padding:30rpx 0;
+  border-bottom:1px solid #eee;
+  font-size: 32rpx;
+}
+.textCount{
+  text-indent: 2em;
+  margin-top:10rpx;
+}
+.textCount:first-child{
+  margin-top:0;
+}
+.chapterBottom{
+  padding:16rpx 0;
+}
+.chapterBtn{
+  width:200rpx;
+  height:60rpx;
+  text-align: center;
+  display: inline-block;
+  border:1px solid #eee;
+  line-height:60rpx;
+  font-size:26rpx;
+}
+.nextChapter{
+  float:right;
+}
+.menuBox{
+  display:inline-block;
+  width:280rpx;
+  text-align: center;
+  vertical-align: top;
+}
+.menuBox image{
+  width:60rpx;
+  height:60rpx;
+}
+.chapterListBox{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:750rpx;
+  z-index: 99;
+  height:100%;
+  transition: left 0.5s ease 0s;
+}
+.chapterListBox.active{
+  left:0;
+  transition: left 0.5s ease 0s;
+}
+.chapterBj{
+  position:absolute;
+  top:0;
+  width:750rpx;
+  height:100%;
+  background:#fff;
+  opacity: 1;
+  z-index: 99;
+}
+.chapterList{
+  position:absolute;
+  top:0;
+  left:0;
+  width:750rpx;
+  box-sizing: border-box;
+  padding:20rpx 30rpx;
+  z-index: 999;
+  white-space:nowrap;
+  height:100%;
+  padding-bottom:100rpx;
+}
+.chapterLi{
+  width:100%;
+  height:80rpx;
+  box-sizing: border-box;
+  border-bottom:1px dotted #999; 
+  vertical-align: top;
+}
+.point{
+  display:inline-block;
+  width:8rpx;
+  height:8rpx;
+  border-radius:50%;
+  background:#999;
+  vertical-align: top;
+  margin-top:38rpx;
+  margin-right:16rpx;
+}
+.chapterText{
+  display: inline-block;
+  width:600rpx;
+  margin-left:20rpx;
+  font-size:28rpx;
+  height:80rpx;
+  line-height:80rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chapterText.active{
+  color:#E45348;
+}
+.rightImg{
+  width:10rpx;
+  height:20rpx;
+  float:right;
+  margin-top:30rpx;
+  margin-right:20rpx;
+}
+.closeImg{
+  position:absolute;
+  bottom:0;
+  z-index: 999;
+  left:0;
+  text-align: center;
+  width:750rpx;
+  background:#fff;
+  padding:20rpx 0;
+}
+.closeImg image{
+  width:48rpx;
+  height:48rpx;
+  vertical-align: top;
+}
+.addressImg{
+  width:24rpx;
+  height:24rpx;
+  vertical-align: top;
+  margin-top:30rpx;
+}
+.setting{
+  position:fixed;
+  top:0;
+  left:0;
+  width:750rpx;
+  box-sizing: border-box;
+  background:#000;
+  opacity: 0.86;
+  z-index: 99;
+}
+.settingLi{
+  flex: 1;
+  text-align: center;
+}
+.settingLi image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: top;
+  margin-top:14rpx;
+}
+.settingText{
+  text-align:center;
+  color:#dbdbdb;
+  font-size:24rpx;
+}
+.chapterDetail.sum,.chapterBj.sum,closeImg.sum{
+  background:#fff;
+  color:#808080;
+}
+.chapterDetail.light,.chapterBj.light,.closeImg.light{
+  background:#000;
+  color:#dbdbdb;
+}
+.sum .chapterText{
+  color:#999;
+}
+.light .chapterText{
+  color:#dbdbdb;
+}
+.setOne{
+  width:100%;
+  height:100rpx;
+  display: flex;
+}
+.setTwo{
+  width:100%;
+  text-align: center;
+  margin:20rpx 0;
+}
+.sizeBtn{
+  width:200rpx;
+  height:50rpx;
+  line-height:50rpx;
+  border:1px solid #dbdbdb;
+  display:inline-block;
+  color:#dbdbdb;
+  font-size:32rpx;
+  border-radius:10rpx;
+}
+.sizeBtn:first-child{
+  margin-right:100rpx;
+}
+.colorList{
+  display: flex;
+  width:100%;
+  height:60rpx;
+  margin-top:30rpx;
+}
+.colorLi{
+  text-align: center;
+  flex: 1;
+}
+.colorRadius{
+  margin:0 auto;
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;
+}
+.colorRadius.colorZero{
+  background-color:#fff;
+}
+.colorRadius.colorOne{
+  background-color:#D8D9DB;
+}
+.colorRadius.colorTwo{
+  background-color:#B4AE9C;
+}
+.colorThree{
+  background-color:#CAE5CD;
+}
+.colorFour{
+  background-color:#EDDDBA;
+}
+.colorFive{
+  background-color:#E7D4DF;
+}
+.colorRadius image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+}
