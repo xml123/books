@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    urlImg: getApp().globalData.urlImg,
   },
 
   /**
@@ -62,5 +62,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  //去我的书架
+  toUserCollect:function(){
+    wx.navigateTo({
+      url: '../../pages/bookStore/bookStore',
+    })
   }
 })

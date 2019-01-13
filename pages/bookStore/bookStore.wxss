@@ -1,15 +1,18 @@
 /* pages/bookStore/bookStore.wxss */
 .toBooks{
-  width:120rpx;
-  text-align: center;
-  font-size:32rpx;
-  color:#737373;
-  height:100rpx;
-  line-height:100rpx;
+  width:100%;
+  text-align: left;
+  font-size:26rpx;
+  color:#999;
+  height:80rpx;
+  line-height:80rpx;
   display: inline-block;
+  box-sizing: border-box;
+  padding-left:50rpx;
 }
 .booksBody{
   padding:0 50rpx;
+  margin-top:20rpx;
 }
 .bookLi{
   margin-bottom:36rpx;

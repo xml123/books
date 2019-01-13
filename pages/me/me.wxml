@@ -1,10 +1,18 @@
 <!--pages/me/me.wxml-->
 <view class="user">
-  <view class="userInfo" style="background-image: url('../../images/userBackground.png')">
+  <view class="userInfo" style="background-image: url({{urlImg+'userBackground.png'}})">
     <view class="userAvatr">
       <image class="avator"src="../../images/avator.png"/>
       <view class="userName">user</view>
       <image class="toEdit" src="../../images/blur_right.png"/>
     </view>
+  </view>
+  <view class="userBody">
+    <view class="userLi" bindtap='toUserCollect'>
+      <image class="liLogo" src="../../images/bookList.png" />
+      <text>我的书架</text>
+      <image class="rightImg" src="../../images/blur_right.png" />
+    </view>
+  
   </view>
 </view>
