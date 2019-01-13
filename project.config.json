@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -61,6 +61,12 @@
 					"name": "章节",
 					"pathName": "pages/chapterDetail/chapterDetail",
 					"query": "bookid=1&chapterid=1"
+				},
+				{
+					"id": -1,
+					"name": "免费书籍",
+					"pathName": "pages/freeBooks/freeBooks",
+					"query": ""
 				}
 			]
 		}

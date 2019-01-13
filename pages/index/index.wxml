@@ -18,7 +18,7 @@
             <view class="ferrBoxTitle">{{item.title}}</view>
           </view>
         </view>
-        <view class="lookMoreFree">查看全部可领书籍</view>
+        <view class="lookMoreFree" bindtap='toFreeBooks'>查看全部可领书籍</view>
       </view>
     </swiper-item>
     <swiper-item class="updateLiBox">

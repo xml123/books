@@ -20,7 +20,7 @@
   </view>
   <view class="youLikeBox">
     <view class="youLike">热门推荐</view>
-    <view class="changeLike">查看全部</view>
+    <!-- <view class="changeLike">查看全部</view> -->
   </view>
   <view class="hotBookList">
     <view class="hotLi" wx:for="{{hotArray}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap='toBookAbstract'>

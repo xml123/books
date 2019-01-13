@@ -1,0 +1,17 @@
+<view class="freeBooks">
+  <view class="freeLi" wx:for="{{freeBookList}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap='toAbstract'>
+    <image class="freeImg" src="{{urlImg + item.bookImg}}" />
+    <view class="freeInfo">
+      <view class="freeTitle">{{item.title}}</view>
+      <view class="freeAuthor">{{item.author}}</view>
+      <view class="freeAbstract">{{item.abstract}}</view>
+    </view>
+  </view>
+  <view>
+    <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+      <view class="weui-loading"></view>
+      <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+    <view class='reachBottom' wx:if="{{noData}}">我还是有底线的～</view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+/* pages/freeBooks/freeBooks.wxss */
+.freeBooks{
+  width:100%;
+}
+.freeLi{
+  width:100%;
+  height:200rpx;
+  box-sizing: border-box;
+  padding:0 30rpx;
+  margin-top:40rpx;
+}
+.freeImg{
+  display: inline-block;
+  width:140rpx;
+  height:200rpx;
+  vertical-align: top;
+}
+.freeInfo{
+  display: inline-block;
+  width:540rpx;
+  box-sizing: border-box;
+  padding-left:20rpx;
+}
+.freeTitle{
+  color:#505050;
+  font-size:32rpx;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.freeAuthor{
+  color:#505050;
+  font-size:28rpx;
+  margin:8rpx 0 16rpx 0;
+}
+.freeAbstract{
+  color:#505050;
+  font-size:24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}

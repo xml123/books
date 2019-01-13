@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperIndex: 0,
+    swiperIndex: 1,
     bannerOne:{},
     bannerTwo:[],
     urlImg: getApp().globalData.urlImg,
@@ -105,6 +105,12 @@ Page({
     const id = e.currentTarget.dataset.id
     wx.navigateTo({
       url: '../../pages/bookAbstract/bookAbstract?id='+id,
+    })
+  },
+  //跳转到免费书籍列表页
+  toFreeBooks:function(){
+    wx.navigateTo({
+      url: '../../pages/freeBooks/freeBooks',
     })
   }
 })

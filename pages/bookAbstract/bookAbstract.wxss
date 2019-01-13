@@ -71,7 +71,7 @@
   color:#000;
 }
 .content{
-  font-size:24rpx;
+  font-size:28rpx;
   color:#999;
   text-indent: 2em;
   margin-top:10rpx;

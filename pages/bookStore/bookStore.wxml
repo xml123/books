@@ -9,7 +9,7 @@
         <image src="{{urlImg + item.bookImg}}"/>
         <view class="booksName">{{item.title}}</view>
       </view>
-      <view class="bookLi addBook">
+      <view class="bookLi addBook" bindtap='toBookCity'>
         +
       </view>
     </view>

@@ -5,7 +5,8 @@
     "pages/me/me",
     "pages/bookCity/bookCity",
     "pages/bookAbstract/bookAbstract",
-    "pages/chapterDetail/chapterDetail"
+    "pages/chapterDetail/chapterDetail",
+    "pages/freeBooks/freeBooks"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
@@ -26,8 +27,8 @@
         "selectedIconPath": "images/find_select.png"
       },
       {
-        "pagePath": "pages/bookStore/bookStore",
-        "text": "书架",
+        "pagePath": "pages/bookCity/bookCity",
+        "text": "书城",
         "iconPath": "images/books.png",
         "selectedIconPath": "images/books_select.png"
       },

@@ -38,8 +38,8 @@ Page({
       book_name: book_name,
       isSelect: isSelect
     }, () => {
-      this.getCountent()
       this.getChapterList()
+      this.getCountent()
     })
   },
 
@@ -64,7 +64,7 @@ Page({
       success: function (res) {
         if (res.data.code == 200) {
           const data = res.data.data
-          let size = isNaN(data.word_size) ? 32 : data.word_size
+          let size = isNaN(data.word_size) ? 36 : data.word_size
           that.setData({
             styleColor: data.read_status,
             wordSize: size,
@@ -128,6 +128,9 @@ Page({
       },
       fail: function (e) {
         console.log('网络出错');
+      },
+      complete:function(){
+        wx.hideLoading()
       }
     })
   },
@@ -162,7 +165,7 @@ Page({
         console.log('网络出错');
       },
       complete: function () {
-        wx.hideLoading()
+        
       }
     })
   },
@@ -389,7 +392,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
@@ -403,13 +406,15 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+    // console.log('退出该小说')
+    // this.saveChapter()
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    console.log('退出该小说2')
     this.saveChapter()
   },
 

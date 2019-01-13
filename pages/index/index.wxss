@@ -66,6 +66,7 @@ page{
   width:130rpx;
   margin-right:20rpx;
   margin-bottom:20rpx;
+  vertical-align: top;
 }
 .freeLi:nth-child(3n){
   margin-right:0;
