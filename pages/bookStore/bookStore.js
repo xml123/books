@@ -111,7 +111,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.getCollect()
+    //this.getCollect()
   },
 
   /**
@@ -151,7 +151,7 @@ Page({
 
   //跳转到书城
   toBookCity:function(){
-    wx.navigateTo({
+    wx.switchTab({
       url: '../../pages/bookCity/bookCity',
     })
   },

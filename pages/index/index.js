@@ -27,6 +27,9 @@ Page({
   //获取banner推荐
   getBannerOne:function(){
     const that = this
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.request({
       url: getApp().globalData.url + '/api/get_banner_one',
       method: 'GET',
@@ -48,6 +51,9 @@ Page({
       },
       fail: function (e) {
         console.log('网络出错');
+      },
+      complete:function(){
+        wx.hideLoading()
       }
     })
   },
