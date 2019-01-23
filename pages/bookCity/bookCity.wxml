@@ -39,7 +39,7 @@
     <view class="rankLi">热听榜</view>
     <view class="rankLi">新书榜</view>
     <view class="rankLi">好评榜</view>
-    <view class="rankLi">免费榜</view>
+    <view class="rankLi" bindtap='toMoreBooks'>免费榜</view>
     <view class="rankLi">热读榜</view>
     <view class="rankLi">人气小说榜</view>
   </view>

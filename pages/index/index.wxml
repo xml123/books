@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="find">
-  <swiper current="{{swiperIndex}}" autoplay class='swiperClass' interval="3000" circular="{{true}}" duration="1500" previous-margin="100rpx" next-margin="100rpx" bindchange="bindchange">
+  <swiper current="{{swiperIndex}}" class='swiperClass' interval="3000" circular="{{true}}" duration="600" previous-margin="100rpx" next-margin="100rpx" bindchange="bindchange">
     <swiper-item class="updateLiBox">
       <view class="updateLi">
           <image data-id="{{bannerOne.id}}" class="findImg" src="{{urlImg + bannerOne.bookImg}}" bindtap='toBook' />
@@ -23,7 +23,23 @@
     </swiper-item>
     <swiper-item class="updateLiBox">
       <view class="updateLi">
-
+        <view class="githubTitle">github地址</view>
+        <view class="githubBody">
+          <view class="gitLi">
+            <view class="liTitle">前端</view>
+            <view class="githubAddress">https://github.com/xml123/books</view>
+          </view>
+          <view class="gitLi">
+            <view class="liTitle">后端</view>
+            <view class="githubAddress">https://github.com/xml123/books_api</view>
+          </view>
+          <view class="gitLi">
+            <view class="liTitle">python爬虫</view>
+            <view class="githubAddress">https://github.com/xml123/books_spider</view>
+          </view>
+        </view>
+        <view class="authorName">开发者：bright</view>
+        <view class="star">(可以的话，请在github上留下你的小星星，谢谢)</view>
       </view>
     </swiper-item>
   </swiper>

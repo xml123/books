@@ -100,3 +100,33 @@ page{
   margin-top:80rpx;
   background:#000;
 }
+.githubTitle{
+  font-size:30rpx;
+  padding:20rpx;
+}
+.githubAddress{
+  font-size:24rpx;
+  text-align: center;
+}
+.githubBody{
+  padding:30rpx 20rpx;
+}
+.gitLi{
+  margin-bottom:20rpx;
+}
+.liTitle{
+  font-size:30rpx;
+  padding:20rpx;
+  color:#E45348;
+}
+.authorName{
+  font-size:24rpx;
+  color:#808080;
+}
+.star{
+  font-size:24rpx;
+  color:#808080;
+  text-align: left;
+  margin-top:20rpx;
+  padding:0 20rpx;
+}
